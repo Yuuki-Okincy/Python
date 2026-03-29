@@ -16,7 +16,7 @@ for kw in kw_list:
     print(kw)
 
     kw_encode = urllib.parse.quote(kw)
-    print(kw_encode)
+
     n_params = ({
         "device": "HMA-AL00",
         "isBeta": "false",
