@@ -9,11 +9,14 @@ import json
 from you_get.common import cookies
 
 """获取加密参数"""
-token = "867c6d0091c12c925af81722d6c6cec9"
+token = "02b5a73af8ff185235263e2f0ffd52f0"
 kw_list=['耐克','彪马']
 
+
+
+
+
 for kw in kw_list:
-    print(kw)
 
     kw_encode = urllib.parse.quote(kw)
 
@@ -76,7 +79,6 @@ for kw in kw_list:
         "refpid": "mm_2898300158_3078300397_115665800437"
     })
     u = int(time.time() * 1000)
-    print(u)
     s = "12574478"
 
     data = {
@@ -87,7 +89,7 @@ for kw in kw_list:
     string = token + "&" + str(u) + "&" + s + "&" + n_data
     headers = {
         # cookie  用户信息 常用于检测是否有登录账号
-        'cookie': 't=0d45b2241cc5de5605cdb5b92f7757b8; cna=gdI3In72RVECAXjnZvEDKa6o; thw=cn; xlly_s=1; _tb_token_=ff859674b9777; cookie2=1a389e716e421cd162891e3780b8e77e; 3PcFlag=1774236268509; wk_cookie2=1c22cab40e53ce1647af94246d36e1cf; wk_unb=UUphy%2FeHvMowD%2Fm8yw%3D%3D; sgcookie=E100mX9M1CXM4l7%2Fo0NJ%2Bk03lbUHyUc7TfJicNH5qW4kg8yDvD%2BjmxgfVpi3ck16WQG%2BvKNkh8I85bsiEJ2ZhD8ZgG%2B%2Fno3oSvAfVQFxzFgjtqU%3D; _hvn_lgc_=0; havana_lgc2_0=eyJoaWQiOjIyMDE1MjU2OTM0NTgsInNnIjoiYWUyZDlkNTZmYWIyNzgxYTQ2YWNlYzc1ODA2M2U4ZTIiLCJzaXRlIjowLCJ0b2tlbiI6IjFrV1V4VkFnY0F3UUQyNlZwRzVkamhnIn0; unb=2201525693458; csg=02793c52; lgc=tb803185300; cancelledSubSites=empty; cookie17=UUphy%2FeHvMowD%2Fm8yw%3D%3D; dnk=tb803185300; skt=90231dead882ddc5; tracknick=tb803185300; _l_g_=Ug%3D%3D; sg=080; _nk_=tb803185300; cookie1=VWt8kDm9nyptZQml2AC66P6U3Xs%2B5QQKg7HNpNDN1Fg%3D; uc1=cookie14=UoYZbjdDtjy9Gg%3D%3D&cookie15=WqG3DMC9VAQiUQ%3D%3D&cookie21=V32FPkk%2FgPzW&cookie16=VT5L2FSpNgq6fDudInPRgavC%2BQ%3D%3D&existShop=false&pas=0; sn=; uc3=vt3=F8dD29X8tjKZfteOQKU%3D&nk2=F5RNZTlfaucdizs%3D&id2=UUphy%2FeHvMowD%2Fm8yw%3D%3D&lg2=V32FPkk%2Fw0dUvg%3D%3D; existShop=MTc3NDIzNjMxNA%3D%3D; uc4=nk4=0%40FY4GsvaDMHH78ft2mRQBsdOVuaPTMw%3D%3D&id4=0%40U2grEJAUx4Nh0bJTn%2BQld4btYYBONTjW; _cc_=W5iHLLyFfA%3D%3D; mtop_partitioned_detect=1; _m_h5_tk=867c6d0091c12c925af81722d6c6cec9_1774330619702; _m_h5_tk_enc=0857104e040c90a83a4367dfa07d518c; _samesite_flag_=true; havana_lgc_exp=1805426701411; sdkSilent=1774351501410; havana_sdkSilent=1774351501410; tfstk=g_wtbbTVTwbg-PWCydf3nRAdzUj3H6qwpPrWnq0MGyULqysZiZrjcxUQoGugcNzYH2Z4sfDsoj3brrn0I-2YTKEz0RjZnGkabxkfraXuklrZ3tI--owxdXirDtmjGdMZdhInRoWlElrs2Lh1vTViacuZVI9blfGCdmgIfFiblX9I029scdiXRMnqRxiXhmiBO0m6GhiblksK02iscrMfvvgEcxgblxMsPG3efcpYOSTPxB_RnLvupchtkK0BHl2BEfgWY29vHVhj6BEsJK9bpS_pNT31aH0qIVrtXrWyQAGYaomYWOp_kuyUJDa5HL0_YuVo_R6ygbHnRbgQFFOs2A3tNRGe2KrKGWeKIR_2akqK5bH3t67iiAUTa4l1TwzYvV4bBXTO-qVuxRGLPwvLujFzmmUOBda542eueXDyr4nD1MIpgIlsYcleYzCrcxgov4js1IRqiDoKrMIpgIlsYD3lfdO2gjmF.; isg=BBISz6txr298vdNh6IyeSKj7Y9j0Ixa9Th5Ie9xrPkWw77LpxLNmzRgFX0tTn45V',
+        'cookie': 't=0d45b2241cc5de5605cdb5b92f7757b8; cna=gdI3In72RVECAXjnZvEDKa6o; thw=cn; _tb_token_=ff859674b9777; cookie2=1a389e716e421cd162891e3780b8e77e; 3PcFlag=1774236268509; wk_cookie2=1c22cab40e53ce1647af94246d36e1cf; wk_unb=UUphy%2FeHvMowD%2Fm8yw%3D%3D; _hvn_lgc_=0; havana_lgc2_0=eyJoaWQiOjIyMDE1MjU2OTM0NTgsInNnIjoiYWUyZDlkNTZmYWIyNzgxYTQ2YWNlYzc1ODA2M2U4ZTIiLCJzaXRlIjowLCJ0b2tlbiI6IjFrV1V4VkFnY0F3UUQyNlZwRzVkamhnIn0; lgc=tb803185300; cancelledSubSites=empty; dnk=tb803185300; tracknick=tb803185300; sn=; mtop_partitioned_detect=1; _m_h5_tk=02b5a73af8ff185235263e2f0ffd52f0_1774774994387; _m_h5_tk_enc=2e578fcf4606c730d8f8155cd91c243a; _samesite_flag_=true; unb=2201525693458; uc1=cookie16=WqG3DMC9UpAPBHGz5QBErFxlCA%3D%3D&cookie15=URm48syIIVrSKA%3D%3D&cookie21=UtASsssme%2BBq&existShop=false&pas=0&cookie14=UoYZbjLBjofckQ%3D%3D; uc3=lg2=URm48syIIVrSKA%3D%3D&nk2=F5RNZTlfaucdizs%3D&id2=UUphy%2FeHvMowD%2Fm8yw%3D%3D&vt3=F8dD29QBybqNTq03aew%3D; csg=b4a2d266; ultraCookieBase=1k6S5%2BcxkgQpZDoYF3XJxQOSgU4Re4nVcFtOxxosB9E93eR%2F6w4zecmAvdWomJdHN9sUyc3w7pU%2FYyosG5Y2HQ6%2FlC20iywWM4dOO06lM4JYrsjhegHzpswsHHRJc1J%2BGI7DpsQMqywLhRbCkZAF1e75x46T3qfehipju%2FKUzvpjeZ14a46e8S8Cc2eob7ff%2FofJO%2FyESWHlfi%2BbySMvK3aYt8Xb3BWaJTnkAfpnWPY5uldbXuUmaI4Ggw0b0dGAc34C7WiTQMRtCDd66iTJQo1x4N8%2BXy%2FtPkiPaSDfBzAMFAr01tTGvvjfUZaYjvJxXULHM4OGduXIv; cookie17=UUphy%2FeHvMowD%2Fm8yw%3D%3D; skt=16c9dd3ecb781544; existShop=MTc3NDc2NTI3NQ%3D%3D; uc4=nk4=0%40FY4GsvaDMHH78ft2mRQBsdZA7NbHIg%3D%3D&id4=0%40U2grEJAUx4Nh0bJTn%2BQld4btZDz0q80w; _cc_=Vq8l%2BKCLiw%3D%3D; _l_g_=Ug%3D%3D; sg=080; _nk_=tb803185300; cookie1=VWt8kDm9nyptZQml2AC66P6U3Xs%2B5QQKg7HNpNDN1Fg%3D; sgcookie=E1004QFSVZFjFwm0saPCPj%2BOiziIHZRewfXXER01U%2BSH545gMzvLC8XA3w4AviWtKBDf0t750icZq6WqYVIgMWjAo%2Bo5sIYibKrnZsEKUXU3pZM%3D; havana_lgc_exp=1805869276000; sdkSilent=1774794075999; havana_sdkSilent=1774794075999; xlly_s=1; tfstk=gvDxbjbwaUYmrqJWJtAoIgZ5sDKo6QmVeqoCIP4c143-x4t4sFo_fR3SSnzmfEutBziZiS2bS5Us-VEinADtaOnEbxx4Inyq0Ry6-evnWmo4Q9FSd4MTF8ZLDdqfGOw4FiKuPcJHKmofmotnVpccYBzuA16s5SN5Vo45cN6j5767bz6bftZ1P3EaPRZbGs_5Forbcoaj50t8jz6b5Vw628azfRas5RM1YnUPcoBtNDeh3UbceBREeoFYWO45BckhKSzCWr61Cr3gM6nbyO6sefTROpUXTg4anroYDVJF3-NtTcqtkKBjWDkryugBB94j4Dc3gx9F_WeuPWaSdZ1bv-UYOxNPvOo81bH8nxTNT0m8lWeoZQ80s-3xTyPXaUut2r0sH7_vrPcnqxN-RUX-75hEjl3vHtgC4DHnp72F-yEGG3KR_1Pb4oPP42dUfRa32yxbG15asur8-3KR_1Pb4uUHct1N_5qP.; isg=BNHRCjTbXCiVTLBEx0HNNW-u4N1rPkWw6YurXrNmzRi3WvGs-45VgH-4_C680t3o',
         'referer': 'https://uland.taobao.com/',
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0'
 
@@ -96,7 +98,6 @@ for kw in kw_list:
 
 
     sign = hashlib.md5(string.encode('utf-8')).hexdigest()
-    print(sign)
 
     # 查询参数
     params = {
@@ -136,9 +137,9 @@ for kw in kw_list:
     # 转成json字典数据
     json_data = json.loads(text_json)
     # 字典取值,提取商品信息所在的列表
-    priceArray = json_data['data']['itemsArray']
+    itemsArray = json_data['data']['itemsArray']
     # for循环遍历，提取列表里的元素
-    for index in priceArray:
+    for index in itemsArray:
         # 在循环中捕获每个商品信息内容，保存字典中
         try:
             dit = {

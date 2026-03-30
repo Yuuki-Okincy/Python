@@ -6,7 +6,10 @@
 import scrapy
 
 
-class TaobaoSearchItem(scrapy.Item):
+class TaobaoItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
+    # 定义要存MySQL的字段
+    keyword = scrapy.Field()
+    title = scrapy.Field()
+    price = scrapy.Field()
     pass
